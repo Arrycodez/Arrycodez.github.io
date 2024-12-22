@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Webpage</title>
+    <style>
+       
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #74ebd5, #9face6);
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px 10%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideDown 1s ease-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #4b79a1;
+            animation: fadeIn 2s ease-in;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4b79a1;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #74ebd5;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?nature,landscape') no-repeat center center/cover;
+            color: white;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeInUp 2s;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            animation: fadeInUp 3s;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            background: #74ebd5;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+        }
+
+        .hero button:hover {
+            background: #4b79a1;
+        }
+
+        section {
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #4b79a1;
+        }
+
+        .about {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease;
+        }
+
+        footer {
+            padding: 20px;
+            background: #4b79a1;
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+   
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Website</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to My World</h2>
+        <p>sometimes silence guides the way out of problems</p>
+        <button>Learn More</button>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about">
+            <p>Hi! I'm Arry, a passionate web designer and developer with a knack for crafting visually stunning and interactive user experiences.Currently im at the beginning stage but i hope tp learn more and build something exceptional. Let's create something amazing together!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Personal Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
